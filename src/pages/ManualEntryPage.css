@@ -1,0 +1,17 @@
+
+/* Custom toast styling for ManualEntryPage */
+.manual-toast {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  font-weight: 500 !important;
+}
+
+/* Override Sonner toast container position */
+[data-sonner-toaster][data-position="top-center"] {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}

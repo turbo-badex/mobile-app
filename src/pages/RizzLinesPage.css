@@ -1,0 +1,51 @@
+
+.rizz-card {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.rizz-card:hover {
+  transform: translateY(-5px);
+}
+
+.copy-button {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.copy-button:hover {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-once {
+  animation: pulse 0.5s ease-in-out;
+}
+
+/* Custom toast styling */
+.rizz-toast {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 12px !important;
+  padding: 12px 18px !important;
+  font-weight: 500 !important;
+}
+
+/* Override Sonner toast container position */
+[data-sonner-toaster][data-position="top-center"] {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
